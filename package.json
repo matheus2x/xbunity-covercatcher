@@ -1,0 +1,30 @@
+{
+  "name": "xbunity-covercatcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/matheus2x/xbunity-covercatcher.git",
+  "author": "matheus2x <matheushenriqueplus99@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node --files src/core"
+  },
+  "dependencies": {
+    "puppeteer": "^5.3.1",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-user-data-dir": "^2.2.7",
+    "puppeteer-extra-plugin-user-preferences": "^2.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-typescript": "^10.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
