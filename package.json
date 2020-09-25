@@ -1,7 +1,7 @@
 {
   "name": "xbunity-covercatcher",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/core/index.ts",
   "repository": "https://github.com/matheus2x/xbunity-covercatcher.git",
   "author": "matheus2x <matheushenriqueplus99@gmail.com>",
   "license": "MIT",
