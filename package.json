@@ -22,12 +22,14 @@
     "start": "ts-node --files src/core"
   },
   "dependencies": {
+    "fs-extra": "^9.1.0",
     "puppeteer": "^5.3.1",
     "puppeteer-extra": "^3.1.15",
     "puppeteer-extra-plugin-user-data-dir": "^2.2.7",
     "puppeteer-extra-plugin-user-preferences": "^2.2.7"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.8",
     "@types/node": "^14.11.2",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "eslint": "^7.9.0",

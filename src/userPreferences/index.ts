@@ -1,9 +1,10 @@
 import puppeteer from "puppeteer-extra";
-import { resolve } from "path";
 import userPreferences from "puppeteer-extra-plugin-user-preferences";
+import { resolve } from "path";
 
 const dir = resolve(__dirname, "..", "covers");
 
+// set user preferences
 puppeteer.use(
   userPreferences({
     userPrefs: {
