@@ -65,7 +65,7 @@ This is a robot that downloads all the covers of an Xbox 360 game available at h
  ┗ 📜index.ts
 ```
 
- 2. In `titlesID.json` change the array with the TitlesID of the games you want to download the cover (by default, it will download covers for some LEGO games)
+ 2. In `titlesID.json` change the array with the TitlesID of the games you want to download the cover (if you dont change, by default, it will download covers for some LEGO games)
  3. Run `$ npm run start` or `$ yarn start`
 
 <br>
