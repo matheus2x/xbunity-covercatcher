@@ -1,7 +1,6 @@
 <h1 align="center">
     <img alt="Logo" title="#logo" width="200px" src=".github/UnityBanner.png"><br>
 </h1>
-<hr>
 
 # Summary
 
@@ -56,6 +55,7 @@ This is a robot that downloads all the covers of an Xbox 360 game available at h
 
 1. Go to `titlesID.json` located at `./src/data/titlesID.json`:
 
+```
 📂src
  ┣ 📂@types
  ┣ 📂covers
@@ -63,6 +63,7 @@ This is a robot that downloads all the covers of an Xbox 360 game available at h
  ┃ ┗ 📜**titlesID.json**
  ┣ 📂userPreferences
  ┗ 📜index.ts
+```
 
  2. In `titlesID.json` change the array with the TitlesID of the games you want to download the cover (by default, it will download covers for some LEGO games)
  3. Run `$ npm run start` or `$ yarn start`
