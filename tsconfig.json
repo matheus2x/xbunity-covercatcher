@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
+    "outDir": "./build",
     "module": "commonjs",
     "allowJs": true,
     "noEmit": false,
@@ -12,6 +13,6 @@
     "strict": true,
     "sourceMap": true
   },
-
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

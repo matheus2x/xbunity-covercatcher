@@ -2,7 +2,7 @@
   "name": "xbunity-covercatcher",
   "version": "1.0.0",
   "description": "Cover Catcher for http://www.xboxunity.net/",
-  "main": "src/core/index.ts",
+  "main": "src/index.ts",
   "author": {
     "name": "Matheus Henrique",
     "email": "matheushenriqueplus99@gmail.com"
@@ -19,7 +19,7 @@
     }
   ],
   "scripts": {
-    "start": "ts-node --files src/core"
+    "start": "ts-node --files src"
   },
   "dependencies": {
     "fs-extra": "^9.1.0",

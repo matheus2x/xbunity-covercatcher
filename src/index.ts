@@ -2,12 +2,11 @@ import puppeteer from "puppeteer-extra";
 import fs from "fs-extra";
 import path from "path";
 
-import titlesID from "../data/titlesID.json";
+import titlesID from "./data/titlesID.json";
 
-import "../userPreferences";
+import "./userPreferences";
 
 (async () => {
-  // open browser
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: {
@@ -15,6 +14,7 @@ import "../userPreferences";
       width: 1600,
     },
   });
+
   const page = await browser.newPage();
   await page.goto("http://www.xboxunity.net/", { waitUntil: "load" });
 
@@ -35,7 +35,7 @@ import "../userPreferences";
       (element) => element.innerHTML.split(" ")
     );
 
-    fs.mkdir(path.join(__dirname, "..", "covers", gameUnityName), (err) => {
+    fs.mkdir(path.join(__dirname, "covers", gameUnityName), (err) => {
       if (err) {
         console.error(err.message);
       }
@@ -43,7 +43,7 @@ import "../userPreferences";
     });
 
     await page.waitForTimeout(1500);
-    const coversDir = path.resolve(__dirname, "..", "covers", gameUnityName);
+    const coversDir = path.resolve(__dirname, "covers", gameUnityName);
     fs.writeFileSync(`${coversDir}/__${titleID}__`, titleID);
 
     await page.click(`#TC${titleID}.tab.tabcovers`);
@@ -60,7 +60,7 @@ import "../userPreferences";
       }
 
       await page.click(".CoverDownload");
-      await page.waitForTimeout(5000);
+      await page.waitForTimeout(6000);
 
       await page.click("a.btnnext");
       await page.waitForTimeout(3000);
@@ -79,7 +79,7 @@ import "../userPreferences";
 
     await page.click("a.btnclose");
 
-    const tempCoversPath = path.resolve(__dirname, "..", "covers");
+    const tempCoversPath = path.resolve(__dirname, "covers");
     const coversTempDir = await fs.readdir(tempCoversPath);
     const covers = coversTempDir.filter((file) => file.endsWith(").png"));
 
@@ -91,6 +91,7 @@ import "../userPreferences";
       });
     }
   };
+
   for (const titleID of titlesID) {
     await downloadCovers(titleID);
   }

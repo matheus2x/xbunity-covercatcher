@@ -9,7 +9,10 @@ yarn-error.log*
 .eslintcache
 
 # internal
-dist
 coverage
 local
 .vscode
+
+# build
+build
+dist
