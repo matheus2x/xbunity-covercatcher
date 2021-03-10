@@ -60,7 +60,7 @@ This is a robot that downloads all the covers of an Xbox 360 game available at h
  ┣ 📂@types
  ┣ 📂covers
  ┣ 📂data
- ┃ ┗ 📜**titlesID.json**
+ ┃ ┗ 📜titlesID.json
  ┣ 📂userPreferences
  ┗ 📜index.ts
 ```
