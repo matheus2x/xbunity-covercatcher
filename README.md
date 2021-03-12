@@ -1,5 +1,6 @@
 <h1 align="center">
-    <img alt="Logo" title="#logo" width="200px" src=".github/UnityBanner.png"><br>
+  <img alt="Logo" title="#logo" width="250px" src=".github/UnityBanner.png"><br>
+  <img alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
 </h1>
 
 # Summary
