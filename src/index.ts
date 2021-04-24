@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer-extra";
+import filenamify from "filenamify";
 import fs from "fs-extra";
 import path from "path";
 
@@ -25,10 +26,10 @@ import "./userPreferences";
     await page.type("#searchtext", String.fromCharCode(submitCharCode));
     await page.waitForTimeout(3000);
 
-    const gameUnityName = await page.$eval(
+    const gameUnityName = filenamify(await page.$eval(
       `div#Title${titleID} > div.Content-Left`,
       (element) => element.innerHTML
-    );
+    ));
 
     const [, totalCovers] = await page.$eval(
       `#TC${titleID}.tab.tabcovers`,
